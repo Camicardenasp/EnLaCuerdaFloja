@@ -20,7 +20,10 @@ body {
 }
 .titulo {
     /* EN LA CUERDA FLOJA */
-    top: 100px;
+    position: absolute;
+    left: 48px;
+    top: 175px;
+
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 700;
@@ -37,7 +40,6 @@ body {
     height: 144px;
     left: 108px;
     top: 328px;
-    background-color: rgba(0, 0, 0, 1);
 }
 .btn-inicial {
     /* PLAY */
