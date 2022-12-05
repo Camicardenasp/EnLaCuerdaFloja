@@ -1,0 +1,36 @@
+body {
+    /* Inicio */
+    background: #191F30;
+    /* new-york-2997877_960_720 1 */
+    position: absolute;
+    width: 1280px;
+    height: 832px;
+    left: 0px;
+    top: 0px;
+
+    background: url(new-york-2997877_960_720.jpg);
+    background-blend-mode: luminosity;
+    }
+
+h1 {
+
+    * EN LA CUERDA FLOJA */
+    position: absolute;
+    width: 750px;
+    height: 266px;
+    left: 265px;
+    top: 150px;
+
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 133px;
+    text-align: center;
+
+    color: rgba(255, 224, 63, 0.6);
+
+    border: 3px solid #FFB905;
+    backdrop-filter: blur(2px);
+    /* Note: backdrop-filter has minimal browser support */
+}
