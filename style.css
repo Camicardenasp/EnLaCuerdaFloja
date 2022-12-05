@@ -2,14 +2,14 @@ body {
     /* Inicio */
     background: #191F30;
     /* new-york-2997877_960_720 1 */
-    position: absolute;
+
     width: 1280px;
     height: 832px;
     left: 0px;
     top: 0px;
 
-    background: url(new-york-2997877_960_720.jpg);
-    background-blend-mode: luminosity;
+    /*background: url(new-york-2997877_960_720.jpg);
+    background-blend-mode: luminosity;*/
 }
 
 h1 {
