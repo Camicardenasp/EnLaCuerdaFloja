@@ -1,35 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Aubrey;
+    src: url(/fonts/Aubrey-Regular.ttf);
+}
+
 body {
     /* Inicio */
+    position: relative;
+    width: 360px;
+    height: 800px;
+
     background: #191F30;
-    /* new-york-2997877_960_720 1 */
-
-    width: 1280px;
-    height: 832px;
-    left: 0px;
-    top: 0px;
-
-    /*background: url(new-york-2997877_960_720.jpg);
-    background-blend-mode: luminosity;*/
 }
 
 h1 {
     /* EN LA CUERDA FLOJA */
     position: absolute;
-    width: 750px;
-    height: 266px;
-    left: 265px;
-    top: 150px;
+    width: 264px;
+    height: 94px;
+    left: 48px;
+    top: 175px;
 
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
-    font-size: 128px;
-    line-height: 133px;
+    font-size: 48px;
+    line-height: 50px;
     text-align: center;
 
     color: rgba(255, 224, 63, 0.6);
-
-    border: 3px solid #FFB905;
     backdrop-filter: blur(2px);
     /* Note: backdrop-filter has minimal browser support */
+}
+
+footer {
+    color: white;
+}
+
+/* Media Querie cuando el celular está rotado horizontalmente*/
+@media only screen and (min-width: 361px) and (max-width: 800px) {
+    
+}
+
+/* Media Querie para tableta vertical*/
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+    
+}
+
+/* Media Querie para tableta horizontal o escritorio*/
+@media only screen and (min-width: 1101px) {
+    body {
+        
+        /* new-york-2997877_960_720 1 */
+    
+        width: 1280px;
+        height: 832px;
+        left: 0px;
+        top: 0px;
+    
+        /*background: url(new-york-2997877_960_720.jpg);
+        background-blend-mode: luminosity;*/
+    }
+    
+    h1 {
+        /* EN LA CUERDA FLOJA */
+        left: 265px;
+        top: 150px;
+    
+        font-family: 'Aubrey';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 128px;
+        line-height: 133px;
+        text-align: center;
+    
+        color: rgba(255, 224, 63, 0.6);
+    
+        border: 3px solid #FFB905;
+        backdrop-filter: blur(2px);
+        /* Note: backdrop-filter has minimal browser support */
+    }
+    
 }
