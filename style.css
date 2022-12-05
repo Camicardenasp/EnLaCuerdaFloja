@@ -38,7 +38,7 @@ h1 {
     /* Note: backdrop-filter has minimal browser support */
 }
 
-button {
+.btn-inicial {
     /* PLAY */
     position: absolute;
     width: 159px;
@@ -55,6 +55,7 @@ button {
     color: #CD9C1C;
     background-color: rgba(0, 0, 0, 0.0);
     border: none;
+    text-decoration: none;
 }
 
 footer {
