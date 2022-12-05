@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Aubrey;
+    src: url(/fonts/Aubrey-Regular.ttf);
+}
+body {
+    /* Inicio */
+    position: relative;
+    width: 360px;
+    height: 800px;
+    background: #191F30;
+    background-image: url(/images/new-york-2997877_960_720.jpg);
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 143px;
+    top: 65px;
+}
+.titulo{
+    position: absolute;
+    width: 144px;
+    height: 51px;
+    left: 109px;
+    top: 158px;
+
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    text-align: center;
+
+    color: rgba(255, 224, 63,1);
+
+}
+.subtitulo{
+    position: absolute;
+    width: 213px;
+    height: 36px;
+    left: 74px;
+    top: 247px;
+
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(249, 198, 54, 0.99);
+}
+.ins_jugador{
+    position: absolute;
+    width: 252px;
+    height: 37px;
+    left: 54px;
+    top: 297px;
+    text-align: center;
+    opacity: 0.8;
+}
+.list_jugadores{
+    position: absolute;
+    width: 185px;
+    height: 157px;
+    left: 88px;
+    top: 372px;
+    background-color: rgba(173, 158, 158,0.5);
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+li{
+    color: white;
+    padding: 5px;
+}
+.btn-jugar{
+    position: absolute;
+    width: 116px;
+    height: 73px;
+    left: 122px;
+    top: 585px;
+    
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 73px;
+    /* identical to box height */
+    color: #CD9C1C;
+    text-decoration: none;
+}

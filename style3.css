@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Aubrey;
+    src: url(/fonts/Aubrey-Regular.ttf);
+}
+body {
+    /* Inicio */
+    position: relative;
+    width: 360px;
+    height: 800px;
+    background: #191F30;
+    background-image: url(/images/new-york-2997877_960_720.jpg);
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo{
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    left: 143px;
+    top: 65px;
+}
+.titulo{
+    position: absolute;
+    width: 144px;
+    height: 51px;
+    left: 109px;
+    top: 158px;
+
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    text-align: center;
+
+    color: rgba(255, 224, 63,1);
+
+}
+.subtitulo{
+    position: absolute;
+    width: 213px;
+    height: 36px;
+    left: 74px;
+    top: 247px;
+
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: rgba(249, 198, 54, 0.99);
+}
