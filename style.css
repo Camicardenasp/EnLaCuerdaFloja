@@ -80,8 +80,6 @@ footer {
         text-align: center;
     
         color: rgba(255, 224, 63, 0.6);
-    
-        border: 3px solid #FFB905;
         backdrop-filter: blur(2px);
         /* Note: backdrop-filter has minimal browser support */
     }
