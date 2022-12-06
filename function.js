@@ -1,12 +1,18 @@
 const input = document.querySelector("#inputTodo")
 const addBtn = document.querySelector(".btnAdd")
 const ul = document.querySelector("ul")
-const empty = document.querySelector(".empty")
+
+var coders = new Array();
+var cont = 0;
 
 addBtn.addEventListener("click", (e) => {
     e.preventDefault();
-
+    
     const text = input.value
+
+    coders.push(text);
+    console.log(coders);
+    
 
     if (text !== '') {
         const li = document.createElement("li")
@@ -17,7 +23,6 @@ addBtn.addEventListener("click", (e) => {
         li.appendChild(addDeleteBtn())
         ul.appendChild(li)
         input.value = ''
-        empty.style.display = "none"
     }
 })
 
