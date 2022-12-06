@@ -22,14 +22,14 @@ body {
     position: absolute;
     width: 74px;
     height: 74px;
-    left: 143px;
+    left: 170px;
     top: 65px;
 }
 .titulo{
     position: absolute;
     width: 144px;
     height: 51px;
-    left: 109px;
+    left: 130px;
     top: 158px;
 
     font-family: 'Aubrey';
@@ -46,7 +46,7 @@ body {
     position: absolute;
     width: 213px;
     height: 36px;
-    left: 74px;
+    left: 110px;
     top: 247px;
 
     font-family: 'Aubrey';
@@ -70,15 +70,16 @@ body {
     opacity: 0.8;
 }
 li{
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 5px;
+    background-color: black;
 }
 .btn-jugar{
     position: absolute;
     width: 116px;
     height: 73px;
-    left: 122px;
-    top: 585px;
+    left: 80px;
+    top: 320px;
     
     font-family: 'Aubrey';
     font-style: normal;
@@ -88,4 +89,22 @@ li{
     /* identical to box height */
     color: #CD9C1C;
     text-decoration: none;
+}
+
+#inputTodo{
+    position: absolute;
+    top: 60px;
+    right: 25px;
+}
+
+.btnAdd{
+    position: absolute;
+    top: 58px;
+    left: 250px;
+}
+
+.liContainer{
+    position: absolute;
+    top: 110px;
+    width: 100%;
 }
