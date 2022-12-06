@@ -43,3 +43,5 @@ const addDeleteBtn = () => {
 
     return deleteBtn
 }
+
+localStorage.setItem("list",JSON.stringyfy(coders));
