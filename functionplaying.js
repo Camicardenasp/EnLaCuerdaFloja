@@ -14,16 +14,13 @@ if (listaDeVivos.length > 0) {
 
     let jugadorSacrificado = listaDeVivos[indiceAleatorio];
 
-    alert(nombreDelJugadorSeleccionado); //console log del jugador seleccionado
 
     listaDeMuertos.push(nombreDelJugadorSeleccionado); // enviamos al jugador seleccionado a la lsita de muertos
 
     listaDeVivos.splice(indiceAleatorio, 1); // eliminar al jugador seleccionado de la lista de vivos
 
+    document.querySelector("#subtitulo").innerHTML = JSON.stringify(jugadorSacrificado)
+
     console.log(listaDeVivos); // console.log   de lista de vivos
 // selecciona un indice aleatorio dentro del array
-} else {
-  // si la condición anterior no se cumple entonces el array de vivos está vacio
-  // gameOver();
 }
-
