@@ -1,49 +1,35 @@
+/* Playing */
 @font-face {
     font-family: Aubrey;
     src: url(/fonts/Aubrey-Regular.ttf);
 }
 body {
-    /* Inicio */
-    position: relative;
-    width: 360px;
-    height: 800px;
     background: #191F30;
     background-image: url(/images/torres.jpg);
     background-blend-mode: luminosity;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
-.logo{
-    position: absolute;
+.logo {
     width: 74px;
     height: 74px;
-    left: 143px;
-    top: 65px;
+    padding: 60px 0 15px 0;
 }
-.titulo{
-    position: absolute;
-    width: 144px;
-    height: 51px;
-    left: 109px;
-    top: 158px;
-
+.titulo {
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 27px;
     text-align: center;
-
     color: rgba(255, 224, 63,1);
-
+    padding: 15px 0 0 0;
 }
 #subtitulo{
-    position: absolute;
-    width: 213px;
-    height: 36px;
-    left: 128px;
-    top: 460px;
-
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
@@ -52,6 +38,5 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-
     color: rgba(249, 198, 54, 0.99);
 }
