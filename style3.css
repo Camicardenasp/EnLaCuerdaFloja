@@ -42,17 +42,17 @@ body {
     color: rgba(255, 224, 63,1);
 
 }
-.subtitulo{
+#subtitulo{
     position: absolute;
     width: 213px;
     height: 36px;
-    left: 74px;
-    top: 247px;
+    left: 128px;
+    top: 460px;
 
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 60px;
     line-height: 27px;
     display: flex;
     align-items: center;
