@@ -1,7 +1,7 @@
 const input = document.querySelector("#inputTodo")
 const addBtn = document.querySelector(".btnAdd")
 const ul = document.querySelector("ul")
-const play = document.querySelector(".btn-play")
+const play = document.querySelector(".btn-pl")
 
 var coders = new Array();
 var cont = 0;
