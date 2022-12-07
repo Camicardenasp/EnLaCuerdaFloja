@@ -1,24 +1,39 @@
-let players = ["Jose", "Cristina", "Juan", "Pedro", "Lucía", "Vanessa"]
+const coders = JSON.parse(localStorage.getItem("list"));
+console.log(coders);
+
+let players = coders;
 let listaDeVivos = players; 
 let listaDeMuertos = [];
 let jugadorSacrificado = "";
+let jugadores = document.querySelector(".jugadores")
+const play = document.querySelector(".btn-pl")
 
-if (listaDeVivos.length > 0) {
-//si la longitud del array es mayor a 0 entonces pasa lo siguiente
-    //generar un numero entero desde 0 hasta la longitud del array
-    let indiceAleatorio = Math.floor((Math.random() * listaDeVivos.length));
-    let nombreDelJugadorSeleccionado = listaDeVivos[indiceAleatorio];
-    let jugadorSacrificado = listaDeVivos[indiceAleatorio];
 
-    // enviamos al jugador seleccionado a la lsita de muertos
-    listaDeMuertos.push(nombreDelJugadorSeleccionado); 
+while (listaDeVivos.length > 0) {
+        //si la longitud del array es mayor a 0 entonces pasa lo siguiente
+        //generar un numero entero desde 0 hasta la longitud del array
+        let indiceAleatorio = Math.floor((Math.random() * listaDeVivos.length));
+        let nombreDelJugadorSeleccionado = listaDeVivos[indiceAleatorio];
+        let jugadorSacrificado = listaDeVivos[indiceAleatorio];
 
-    // eliminar al jugador seleccionado de la lista de vivos
-    listaDeVivos.splice(indiceAleatorio, 1); 
+        // enviamos al jugador seleccionado a la lista de muertos
+        listaDeMuertos.push(nombreDelJugadorSeleccionado); 
 
-    document.querySelector("#subtitulo").innerHTML = JSON.stringify(jugadorSacrificado)
+        // eliminar al jugador seleccionado de la lista de vivos
+        listaDeVivos.splice(indiceAleatorio, 1); 
 
-    // console.log   de lista de vivos
-    console.log(listaDeVivos); 
-    // selecciona un indice aleatorio dentro del array
+        document.querySelector("#subtitulo").innerHTML = JSON.stringify(jugadorSacrificado);
+
+        document.querySelector("#vivos").innerHTML = "Jugadores vivos: " + listaDeVivos;
+
+        // console.log   de lista de vivos
+        console.log(listaDeVivos); 
+        // selecciona un indice aleatorio dentro del array
+        let contin = FALSE;
+        function sacri() {
+            contin = TRUE;
+        } 
+        if (contin==TRUE) {
+            continue;
+        }
 }
