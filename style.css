@@ -1,54 +1,37 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 @font-face {
     font-family: Aubrey;
     src: url(/fonts/Aubrey-Regular.ttf);
 }
 body {
     /* Inicio */
-    position: relative;
-    width: 360px;
-    height: 800px;
     background: #191F30;
     background-image: url(/images/new-york-2997877_960_720.jpg);
     background-blend-mode: luminosity;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .titulo {
     /* EN LA CUERDA FLOJA */
-    position: absolute;
-    left: 48px;
-    top: 175px;
-
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
     line-height: 50px;
     text-align: center;
-
     color: rgba(255, 224, 63, 1);
-    /* Note: backdrop-filter has minimal browser support */
+    padding: 60px 0 60px 0;
 }
 .logo {
-    position: absolute;
     width: 144px;
     height: 144px;
-    left: 108px;
-    top: 328px;
+    padding: 60px 0 60px 0;
 }
 .btn-inicial {
     /* PLAY */
-    position: absolute;
-    width: 159px;
-    height: 100px;
-    left: 101px;
-    top: 530px;
-
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
@@ -59,6 +42,7 @@ body {
     background-color: rgba(0, 0, 0, 0.0);
     border: none;
     text-decoration: none;
+    padding: 70px 0 100px 0;
 }
 /* Media Querie cuando el celular está rotado horizontalmente*/
 @media only screen and (min-width: 361px) and (max-width: 800px) {
