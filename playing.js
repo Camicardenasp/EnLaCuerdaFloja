@@ -12,6 +12,10 @@ document.querySelector("#vivos").innerHTML = "Jugadores vivos: " + listaDeVivos;
 
 
 play.addEventListener("click", (e) => { 
+    //efecto de sonido al sacrificar
+    const latigo = new Audio('/sounds/latigo.mp3');
+    latigo.play();
+
     if (listaDeVivos.length == 0) {
         location.href = "/game-over.html"; 
     }
