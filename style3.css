@@ -1,8 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 @font-face {
     font-family: Aubrey;
     src: url(/fonts/Aubrey-Regular.ttf);
@@ -13,7 +8,7 @@ body {
     width: 360px;
     height: 800px;
     background: #191F30;
-    background-image: url(/images/photo_4936124579953355506_y.jpg);
+    background-image: url(/images/torres.jpg);
     background-blend-mode: luminosity;
     background-repeat: no-repeat;
     background-size: cover;
