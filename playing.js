@@ -15,6 +15,8 @@ play.addEventListener("click", (e) => {
     //efecto de sonido al sacrificar
     const latigo = new Audio('/sounds/latigo.mp3');
     latigo.play();
+    const guillotina = new Audio('/sounds/guillotina.mp3');
+    guillotina.play();
 
     if (listaDeVivos.length == 0) {
         location.href = "/game-over.html"; 
