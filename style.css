@@ -1,9 +1,9 @@
+/* Inicio */
 @font-face {
     font-family: Aubrey;
     src: url(/fonts/Aubrey-Regular.ttf);
 }
 body {
-    /* Inicio */
     background: #191F30;
     background-image: url(/images/new-york-2997877_960_720.jpg);
     background-blend-mode: luminosity;
@@ -37,8 +37,7 @@ body {
     font-weight: 400;
     font-size: 96px;
     line-height: 100px;
-    /* identical to box height */
-    color: #CD9C1C;
+    color: #ffd978;
     background-color: rgba(0, 0, 0, 0.0);
     border: none;
     text-decoration: none;

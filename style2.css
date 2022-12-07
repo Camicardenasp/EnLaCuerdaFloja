@@ -1,54 +1,35 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/*Selección de Jugadores*/
 @font-face {
     font-family: Aubrey;
     src: url(/fonts/Aubrey-Regular.ttf);
 }
 body {
-    /* Inicio */
-    position: relative;
-    width: 360px;
-    height: 800px;
     background: #191F30;
-    background-image: url(/images/new-york-2997877_960_720.jpg);
+    background-image: url(/images/new-york-2997877_960_720.jpg) ;
     background-blend-mode: luminosity;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
-.logo{
-    position: absolute;
+.logo {
     width: 74px;
     height: 74px;
-    left: 170px;
-    top: 65px;
+    padding: 60px 0 15px 0;
 }
-.titulo{
-    position: absolute;
-    width: 144px;
-    height: 51px;
-    left: 130px;
-    top: 158px;
-
+.titulo {
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 27px;
     text-align: center;
-
     color: rgba(255, 224, 63,1);
-
+    padding: 15px 0 0 0;
 }
-.subtitulo{
-    position: absolute;
-    width: 213px;
-    height: 36px;
-    left: 110px;
-    top: 247px;
-
+.subtitulo {
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
@@ -57,54 +38,43 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-
     color: rgba(249, 198, 54, 0.99);
 }
-.cont{
-    position: absolute;
-    width: 252px;
-    height: 37px;
-    left: 54px;
-    top: 297px;
-    text-align: center;
-    opacity: 0.8;
+.cont {
+    opacity: 0.9;
 }
-li{
+.btnAdd {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.liContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+} 
+ul {
+    list-style: none;
+} 
+form {
+    display: flex;
+    flex-direction: column;
+}
+li {
     color: rgb(255, 255, 255);
-    padding: 5px;
-    background-color: black;
 }
-.btn-jugar{
-    position: absolute;
-    width: 116px;
-    height: 73px;
-    left: 80px;
-    top: 320px;
-    
+.btn-play {
     font-family: 'Aubrey';
     font-style: normal;
     font-weight: 400;
     font-size: 70px;
     line-height: 73px;
-    /* identical to box height */
-    color: #CD9C1C;
+    color: #f8c544;
     text-decoration: none;
 }
-
-#inputTodo{
-    position: absolute;
-    top: 60px;
-    right: 25px;
-}
-
-.btnAdd{
-    position: absolute;
-    top: 58px;
-    left: 250px;
-}
-
-.liContainer{
-    position: absolute;
-    top: 110px;
-    width: 100%;
+.btn-back {
+    font-family: 'Aubrey';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 73px;
+    color: #e8b840;
+    text-decoration: none;
 }
