@@ -5,35 +5,37 @@ let players = coders;
 let listaDeVivos = players; 
 let listaDeMuertos = [];
 let jugadorSacrificado = "";
-let jugadores = document.querySelector(".jugadores")
-const play = document.querySelector(".btn-pl")
+
+const play = document.querySelector(".btn-play");
+
+document.querySelector("#vivos").innerHTML = "Jugadores vivos: " + listaDeVivos;
 
 
-while (listaDeVivos.length > 0) {
-        //si la longitud del array es mayor a 0 entonces pasa lo siguiente
-        //generar un numero entero desde 0 hasta la longitud del array
-        let indiceAleatorio = Math.floor((Math.random() * listaDeVivos.length));
-        let nombreDelJugadorSeleccionado = listaDeVivos[indiceAleatorio];
-        let jugadorSacrificado = listaDeVivos[indiceAleatorio];
+play.addEventListener("click", (e) => { 
+    if (listaDeVivos.length == 0) {
+        location.href = "/game-over.html"; 
+    }
+    if (listaDeVivos.length > 0) {
+        
+            //si la longitud del array es mayor a 0 entonces pasa lo siguiente
+            //generar un numero entero desde 0 hasta la longitud del array
+            let indiceAleatorio = Math.floor((Math.random() * listaDeVivos.length));
+            let nombreDelJugadorSeleccionado = listaDeVivos[indiceAleatorio];
+            let jugadorSacrificado = listaDeVivos[indiceAleatorio];
 
-        // enviamos al jugador seleccionado a la lista de muertos
-        listaDeMuertos.push(nombreDelJugadorSeleccionado); 
+            // enviamos al jugador seleccionado a la lista de muertos
+            listaDeMuertos.push(nombreDelJugadorSeleccionado); 
 
-        // eliminar al jugador seleccionado de la lista de vivos
-        listaDeVivos.splice(indiceAleatorio, 1); 
+            // eliminar al jugador seleccionado de la lista de vivos
+            listaDeVivos.splice(indiceAleatorio, 1); 
 
-        document.querySelector("#subtitulo").innerHTML = JSON.stringify(jugadorSacrificado);
+            document.querySelector("#subtitulo").innerHTML = JSON.stringify(jugadorSacrificado);
 
-        document.querySelector("#vivos").innerHTML = "Jugadores vivos: " + listaDeVivos;
+            document.querySelector("#vivos").innerHTML = "Jugadores vivos: " + listaDeVivos;
 
-        // console.log   de lista de vivos
-        console.log(listaDeVivos); 
-        // selecciona un indice aleatorio dentro del array
-        let contin = FALSE;
-        function sacri() {
-            contin = TRUE;
-        } 
-        if (contin==TRUE) {
-            continue;
-        }
+            // console.log   de lista de vivos
+            console.log(listaDeVivos); 
+            // selecciona un indice aleatorio dentro del array
+    }
 }
+)
