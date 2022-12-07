@@ -1,6 +1,7 @@
 const input = document.querySelector("#inputTodo")
 const addBtn = document.querySelector(".btnAdd")
 const ul = document.querySelector("ul")
+const play = document.querySelector(".btn-play")
 
 var coders = new Array();
 var cont = 0;
@@ -44,4 +45,9 @@ const addDeleteBtn = () => {
     return deleteBtn
 }
 
-localStorage.setItem("list",JSON.stringyfy(coders));
+addBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    localStorage.setItem("list",JSON.stringify(coders));
+    }
+)
+
